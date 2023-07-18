@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Teste 03</h1>
+        <form action="cad.php" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="inome">Nome: </label>
+                    <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+                </p>
+                <p>
+                    <label for="iemal">E-mail</label>
+                    <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="fulanodetal@gamil.com">
+                </p>
+                <p>
+                    <label for="itel">Telefone</label>
+                    <input type="tel" name="tel" id="itel" required autocomplete="tel" pattern="^\(|d{2}\) [0-9]{4}-[0-9]{4}$" placeholder="(xx) xxxx-xxxx">
+                </p>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+        <ul>
+            <li><a href="pag02.html">Pag.02</a></li>
+            <li><a href="index.html">Index</a></li>
+        </ul>
+    </main>
+</body>
+</html>
