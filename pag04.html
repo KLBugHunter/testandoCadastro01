@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Exemplo de forms</h1>
+    <form action="cad.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Gênero</legend>
+            <input type="radio" name="gene" id="imasc"><label for="imasc">M</label><br>
+            <input type="radio" name="gene" id="ifem"><label for="ifem">F</label><br>
+            <input type="radio" name="gene" id="inb" checked><label for="inb">N/B</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="bas" id="ibas"><label for="ibas">Basquete</label><br>
+            <input type="checkbox" name="fut" id="ifut"><label for="ifut">Futebol</label><br>
+            <input type="checkbox" name="nat" id="inat"><label for="inat">Natação</label><br>
+            <input type="checkbox" name="ten" id="iten"><label for="iten">Ténis</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <ul>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="pag02.html">Pag.02</a></li>
+        <li><a href="pag03.html">Pag.03</a></li>
+    </ul>
+</body>
+</html>
