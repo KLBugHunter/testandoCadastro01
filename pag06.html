@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Teste 06</h1>
+    <main>
+        <form action="cad.php" method="post" autocomplete="on">
+            <p>
+                <label for="iest">Estado</label>
+                <select name="est" id="iest">
+                    <option value="" selected>--- Escolha ---</option>
+                    <optgroup label="Reg. sudeste">
+                        <option value="sp01">São Paulo01</option>
+                        <option value="sp02">São Paulo02</option>
+                        <option value="sp03">São Paulo03</option>
+                        <option value="sp04">São Paulo04</option>
+                    </optgroup>
+
+                    <optgroup label="Reg. nordeste">
+                        <option value="sp05">São Paulo05</option>
+                        <option value="sp06">São Paulo06</option>
+                        <option value="sp07">São Paulo07</option>
+                        <option value="sp08">São Paulo08</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="iprof">Profição</label>
+                <input type="text" name="prof" id="iprof" list="lprof">
+                <datalist id="lprof">
+                    <option value="adm01">Adiministrador01</option>
+                    <option value="adm02">Adiministrador02</option>
+                    <option>Adiministrador03</option>
+                    <option>Adiministrador04</option>
+                </datalist>
+            </p>
+
+            <p>
+                <label for="imsg">Mensaguem: </label>
+                <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="curso de html e csss do curso em video"></textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+        <ul>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="pag02.html">Pag.02</a></li>
+            <li><a href="pag03.html">Pag.03</a></li>
+            <li><a href="pag04.html">Pag.04</a></li>
+            <li><a href="pag05.html">Pag.05</a></li>
+        </ul>
+    </main>
+</body>
+</html>
